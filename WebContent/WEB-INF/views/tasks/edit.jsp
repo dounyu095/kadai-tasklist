@@ -8,7 +8,7 @@
                 <h2>id : ${task.id} のタスク編集ページ</h2>
 
                 <form method="POST"
-                    action="${pageContext.request.contextPath}/create">
+                    action="${pageContext.request.contextPath}/update">
                     <c:import url="_form.jsp" />
                 </form>
 

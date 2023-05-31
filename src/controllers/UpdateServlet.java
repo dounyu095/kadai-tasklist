@@ -39,7 +39,7 @@ public class UpdateServlet extends HttpServlet {
             // 該当のIDのメッセージ1件のみをデータベースから取得
             Task t = em.find(Task.class, (Integer)(request.getSession().getAttribute("task_id")));
 
-            // 内容をフィールドに上書き
+            // フォームの内容を各フィールドに上書き
             String content = request.getParameter("content");
             t.setContent(content);
 
@@ -59,5 +59,4 @@ public class UpdateServlet extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/index");
         }
     }
-
 }
