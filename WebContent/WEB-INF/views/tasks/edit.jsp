@@ -9,10 +9,7 @@
 
                 <form method="POST"
                     action="${pageContext.request.contextPath}/create">
-                    <label for="content_task">タスクの内容</label><br /> <input type="text"
-                        name="content" id="content_task" value="${task.content}" /> <br />
-                    <br /> <input type="hidden" name="_token" value="${_token}" />
-                    <button type="submit">追加</button>
+                    <c:import url="_form.jsp" />
                 </form>
 
                 <p>
